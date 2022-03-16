@@ -1,0 +1,36 @@
+package in.co.Controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class UserRegistrationCtl extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	public UserRegistrationCtl() {
+		super();
+	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String fname=request.getParameter("fname");
+		String lname=request.getParameter("lname");
+		String gender=request.getParameter("gender");
+		String email=request.getParameter("email");
+		String contact=request.getParameter("contact");
+		String add1=request.getParameter("add1");
+		String add2=request.getParameter("add2");
+		String add3=request.getParameter("add3");
+		String dob=request.getParameter("dob");
+
+
+	}
+
+}

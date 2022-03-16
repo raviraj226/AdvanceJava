@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+String Fname=request.getParameter("fname");
+String lname=request.getParameter("lname");
+String male=request.getParameter("male");
+String female=request.getParameter("female");
+String email=request.getParameter("email");
+String contact=request.getParameter("contact");
+String add1=request.getParameter("add1");
+String add2=request.getParameter("add2");
+String add3=request.getParameter("add3");
+String date=request.getParameter("date");
+String Fname=request.getParameter("1");
+String Fname=request.getParameter("2");
+%>
+
+</body>
+</html>

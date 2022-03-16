@@ -1,0 +1,70 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="teal">
+	<form action="LoginCtl" method="post">
+		<table align="center">
+
+
+			<h1 align="center">LogIn</h1>
+			<%
+				String error = (String) request.getAttribute("error");
+				if (error != null) {
+			%>
+			<center>
+				<font color="maroon"><%=error%></font>
+			</center>
+			<%
+				}
+			%>
+
+			<tr>
+				<th>Username*</th>
+				<td><input type="text" name="user"></td>
+				<td>
+					<%
+						String error1 = (String) request.getAttribute("error1");
+						if (error1 != null) {
+					%>
+					<center>
+						<font color="maroon"><%=error1%></font>
+					</center> <%
+ 	}
+ %>
+				</td>
+			</tr>
+
+
+			<th>Password*</th>
+			<td><input type="password" name="pwd"></td>
+			<td><%
+		String error2 = (String)request.getAttribute("error2");
+		if(error2 != null){
+		%>
+		<center><font color="maroon"><%=error2 %></font></center>	
+		<%	
+		}
+		%> </td>
+
+
+			<tr>
+				<th></th>
+				<td><input type="Submit" name="op" value="Submit"></input></td>
+			</tr>
+
+
+			<tr>
+				<th></th>
+				<td><input type="submit" value="Forgot Password"></td>
+			</tr>
+
+
+		</table>
+	</form>
+</body>
+</html>

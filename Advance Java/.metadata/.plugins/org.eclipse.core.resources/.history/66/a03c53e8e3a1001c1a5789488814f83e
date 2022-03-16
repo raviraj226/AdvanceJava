@@ -1,0 +1,19 @@
+package in.co.Model;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+public class UserModel {
+	Class.forName("com.mysql.jdbc.Driver");
+	private static final String DriverManager = null;
+
+	Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rays", "root",
+			"root");
+
+	conn.setAutoCommit(false);
+	PreparedStatement ps = (PreparedStatement) conn.prepareStatement("SELECT ,(PHYSICS+CHEMISTRY+MATHS) AS TOTAL FROM"+"(SELECT  FROM MARKSHEET WHERE PHYSICS>40 AND CHEMISTRY>40 AND MATHS>40)MARKSHEET ORDER BY TOTAL DESC;");
+
+	ResultSet rs = ps.executeQuery();
+
+}

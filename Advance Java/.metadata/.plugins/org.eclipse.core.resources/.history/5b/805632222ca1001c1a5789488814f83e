@@ -1,0 +1,91 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="teal">
+<h1 align="center" style="color:maroon;">Registration Form</h1>
+    <h1 align="center"><img src="D:\Learning Java\UI\download.png" width="250px" height="100px"></h1>
+    <form>
+        <table align="center">
+            <tr>
+                <th><label for="fName" style="color: brown;">First Name</label></th>
+                <td><input id="fname" type="text"></td>
+            </tr>
+            <tr>
+                <th><label for="fName" style="color: brown;">Last Name</label></th>
+                <td><input id="fname" type="text"></td>
+            </tr>
+            <tr>
+                <th><label for="fname" style="color: brown;">Gender</label></th>
+                <td>
+                    <input type="radio" name="new">Male
+                    <input type="radio" name="new">Female
+                </td>
+            </tr>
+            <tr>
+                <th><label for ="email" style="color: brown;">Email</label></th>
+                <td><input type ="email"> </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="fName" style="color: brown;">Contact</label>
+                </th>
+                <td>
+                    <input type = "number" >
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="fName" style="color: brown;">Address</label>
+                </th>
+                <td>
+                    <input type="fname" placeholder="Line 1">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <td>
+                        <input type="fname" placeholder="Line 2">
+                    </td>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <td>
+                        <input type="fname" placeholder="Line 3">
+                    </td>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <label for="fName" style="color: brown;">DOB</label>
+                </th>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="fName" style="color: brown;">Language</label>
+                </th>
+                <td>
+                    <input type="radio" name="1">Java
+                    <input type="radio" name="1">Python
+                    <input type="radio" name="2">html
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>
+                    <input type="submit" value="Register" style="color: crimson;">
+                    <input type="button" value="New" style="color: crimson;">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

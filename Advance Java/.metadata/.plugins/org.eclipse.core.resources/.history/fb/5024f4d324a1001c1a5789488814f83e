@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+</head>
+<body bgcolor="cyan">
+	<form action="Submit.jsp" method="post">
+		<table align="center">
+			<h1 align="center">LOGIN</h1>
+			<tr>
+				<th>USERNAME*</th>
+				<td><input type="text" name="user"></td>
+			</tr>
+			<tr>
+				<th>PASSWORRD*</th>
+				<td><input type="Password" name="pwd"></td>
+			</tr>
+			<tr>
+				<th></th>
+				<td><input type="SUBMIT" name="USER" value="Submit"></input></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
